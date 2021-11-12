@@ -130,7 +130,7 @@ function c_md_mermaid {
     image_absolute_path="/${output_path}/${dasherized}-${block_count}.${output_file_type}"
 
     if [[ -z "${ABSOLUTE_IMAGE_LINKS}" ]]; then
-      image_path=".${image_relative_path}"
+      image_path="./${image_relative_path}"
     else
       image_path="${image_absolute_path}"
     fi
